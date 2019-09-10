@@ -9,14 +9,21 @@ var apos = require('apostrophe')({
     'apostrophe-templates': { viewsFolderFallback: path.join(__dirname, 'views') },
 
 
-    'libro': {},
+    'libro': {
+      restApi: true
+    },
     'libro-widgets': {},
     'libro-pages': {},
 
-    'biblioteca': {},
+    'biblioteca': {
+      restApi: true
+    },
     'biblioteca-widgets': {},
     'biblioteca-pages': {},
     'users-widgets': {},
-    'users-pages': {}
+    'users-pages': {},
+    'apostrophe-headless': {
+      apiKey: 'almaviva'
+    }
   }
 });
