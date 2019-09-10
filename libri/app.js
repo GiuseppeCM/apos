@@ -16,6 +16,7 @@ var apos = require('apostrophe')({
     'biblioteca': {},
     'biblioteca-widgets': {},
     'biblioteca-pages': {},
-    'users-widgets': {}
+    'users-widgets': {},
+    'users-pages': {}
   }
 });

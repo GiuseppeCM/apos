@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <div class="main-content">
+
+        {% for user in data.users %}
+            <h1>
+                <a href='/lista-utenti/{{user.id}}'>{{ user.name }}</a>
+            </h1>
+            <h2>{{ user.phone}}</h2>
+            <br/>
+        {% endfor %}
+
+    </div>
+
+{% endblock %}

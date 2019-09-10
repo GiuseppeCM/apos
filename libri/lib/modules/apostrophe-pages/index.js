@@ -23,6 +23,14 @@ module.exports = {
       parkedId: 'lista-biblioteche',
       published: true,
       slug: '/lista-biblioteche'
+    },
+    {
+      name: 'users',
+      label: 'Utenti',
+      type: 'users-page',
+      parkedId: 'lista-utenti-esterni',
+      published: true,
+      slug: '/lista-utenti'
     }
   ]
 
