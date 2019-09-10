@@ -2,12 +2,8 @@
 
 {% block main %}
     <div class="main-content">
-        {% for libro in data.pieces %}
-            <h1>
-                <a href="{{libro._url}}">
-                    {{ libro.title }}
-                </a>
-            </h1>
-        {% endfor %}
+        <div data-apos-ajax-context="data-apos-ajax-context">
+            {% include "indexAjax.html" %}
+        </div>
     </div>
 {% endblock %}

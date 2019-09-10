@@ -1,0 +1,16 @@
+<div data-apos-ajax-append="data-apos-ajax-append">
+
+    {% for libro in data.pieces %}
+        <h1>
+            <a href="{{libro._url}}">
+                {{ libro.title }}
+            </a>
+        </h1>
+    {% endfor %}
+
+</div>
+{% if data.currentPage < data.totalPages %}
+    <div>
+        <a href="{{ data.url | build({ page: data.currentPage + 1, append: 1 }) }}">Mostra più risultati</a>
+    </div>
+{% endif %}
