@@ -3,7 +3,8 @@ apos.define('users-widgets', {
     construct: function(self, options) {
         self.play = function($widget, data, options) {
             self.html('users', data, function(data) {
-                $widget.find('[data-apos-twitter-contents]').html(data).addClass('loaded');
+                debugger
+                $widget.find('[data-users-container]').html(data).addClass('loaded');
             });
         };
     }

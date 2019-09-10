@@ -1,5 +1,11 @@
 {% block item %}
-
     <h1>Utenti</h1>
-
+    <div>
+        {% for user in data.users %}
+            <h1>{{ user.name }}</h1>
+            <h1>{{ user.email }}</h1>
+            <h1>{{ user.phone }}</h1>
+            <br>
+        {% endfor %}
+    </div>
 {% endblock %}
