@@ -5,7 +5,6 @@ module.exports = {
     construct: function(self, options) {
         self.template = 'placeholder';
         self.route('post', 'users', function(req, res) {
-            debugger
             const r = require('request');
             r('https://jsonplaceholder.typicode.com/users', function(error, response, body) {
                 if (error) {
@@ -17,9 +16,7 @@ module.exports = {
                         users: JSON.parse(body)
                     })
                 )
-
             })
         })
-
     }
 }

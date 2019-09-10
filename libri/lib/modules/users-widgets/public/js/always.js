@@ -4,7 +4,7 @@ apos.define('users-widgets', {
         self.play = function($widget, data, options) {
             self.html('users', data, function(data) {
                 debugger
-                $widget.find('[data-users-container]').html(data).addClass('loaded');
+                $widget.find('[data-users-container]').html(data);
             });
         };
     }
