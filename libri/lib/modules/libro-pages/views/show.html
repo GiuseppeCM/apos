@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <div class="main-content">
+        <h2 style="color:black">{{data.piece.title}}</h2>
+
+        <span style="color:black">
+            {{
+                apos.area(data.piece,
+                            'body'  ,
+                            {
+                              widgets:{
+                                  'apostrophe-rich-text':{toolbar: [ 'Bold', 'Italic' ]}
+                              }
+                            }
+                         ) 
+            }}
+        </span>
+        <span style="color:black">
+            {% for biblioteca in data.piece._biblioteche %}
+                <p>{{ biblioteca.title }}</p>
+            {% endfor %}
+        </span>
+
+    </div>
+{% endblock %}
